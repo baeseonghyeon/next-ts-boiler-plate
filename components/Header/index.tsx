@@ -23,17 +23,16 @@ const Header: NextPage = () => {
         <div className={cn('container', 'flex-row', 'd-flex')}>
             {navItems.map((item, idx) => {
                 return (
-                    <Link href={item.path} key={idx}>
-                        <a
-                            href={item.path}
-                            className={cn(
-                                'link__label',
-                                router.pathname === item.path &&
-                                    'link__label-active',
-                            )}
-                        >
-                            {item.title}
-                        </a>
+                    <Link
+                        href={item.path}
+                        key={idx}
+                        className={cn(
+                            'link__label',
+                            router.pathname === item.path &&
+                                'link__label-active',
+                        )}
+                    >
+                        {item.title}
                     </Link>
                 );
             })}

@@ -37,10 +37,8 @@ const NotFound: NextPage = () => {
                 <h3 className={cn('label')}>페이지를 찾을 수 없습니다.</h3>
                 <p>
                     {counter}초 후
-                    <Link href="/">
-                        <a href="/" className={cn('link__label')}>
-                            메인페이지
-                        </a>
+                    <Link href="/" className={cn('link__label')}>
+                        메인페이지
                     </Link>
                     로 이동합니다.
                 </p>
